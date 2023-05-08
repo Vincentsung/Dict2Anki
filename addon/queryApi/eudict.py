@@ -176,7 +176,7 @@ class API(AbstractQueryAPI):
     session = requests.Session()
     session.mount('http://', HTTPAdapter(max_retries=retries))
     session.mount('https://', HTTPAdapter(max_retries=retries))
-    url = 'https://dict.eudic.net/dicts/en/{}'
+    url = 'https://dict.eudic.net/dicts/fr/{}'
     parser = Parser
 
     @classmethod
